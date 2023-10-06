@@ -1,6 +1,6 @@
 setwd("C:/R")
 df <- read.csv("ДЗ3_superstore_data.csv")
-cat("\nПервыЕ строки:")
+cat("\nПервые строки датасета:")
 head(df)
 library(dplyr)
 cat("\nIncome больше 30 000:")
