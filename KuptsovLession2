@@ -1,0 +1,54 @@
+#работа с векторами
+vec2<- 1:10
+vec1<- c("Hello","dear","world","i","am","back")
+vec1
+vec2
+
+length(vec2)
+vec2[1]
+vec2[2:4]
+
+vec3<-1:10
+vec4<-1:10
+vec_res<-vec3+vec4
+vec_res
+
+mean(vec3)
+
+#функция
+Func<-function(X){
+  revenue<-X*2
+}
+results<-Func(3)
+results
+
+for (x in vec3){
+  results<-Func(x)
+  print(results)
+}
+
+#векторы
+vec1<-1:3
+vec2<-c("Hello", "Dear", "World")
+vec3<-c("1","Now", '3')
+
+#матрица
+matrix<-cbind(vec1,vec2,vec3)
+matrix
+#вывести столбец с первого элемента
+matrix[,1]
+#вывести строку со второго элемента
+matrix[2,]
+
+print("Выведите на экран элемент, стоящий на пересечении двух диагоналей матрицы.")
+print(matrix[(ncol(matrix) + 1) / 2, (nrow(matrix) + 1) / 2])
+
+
+print("Загрузите выбранные данные в датафрейм, выведите на экран первые несколько строчек загруженных данных, а также общую статистику по датафрейму с помощью функций str и summary.")
+
+setwd("C:/Users/misha/Desktop/RScripts")
+df <- read.csv("ДЗ2_vgsales.csv")
+print(head(df))
+#install.packages('data.frame')
+#print(data.frame::str(df))
+print(summary(df))
