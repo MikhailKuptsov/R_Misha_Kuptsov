@@ -1,0 +1,21 @@
+#install.packages("tidyr")
+#install.packages("dplyr")
+#install.packages("plotly")
+#install.packages("leaflet")
+#install.packages('DT')
+#install.packages('htmlwidgets', 'rpivotTable')
+#install.packages("shiny")
+#install.packages("readr")
+#install.packages("lubridate")
+library(dplyr)
+library(plotly)
+library(tidyr)
+#library(leaflet)
+#library(DT)
+#library(rpivotTable)
+library(shiny)
+setwd("C:/Users/koly36/Desktop/RScripts")
+
+
+
+runApp(display.mode="showcase")
